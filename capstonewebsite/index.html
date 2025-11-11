@@ -12,7 +12,7 @@
     /* ---------- Modern Design System ---------- */
     :root {
       /* Dark theme colors */
-      --dark-bg: #121212;
+      --dark-bg: #000000;
       --dark-surface: #1e1e1e;
       --dark-surface-2: #2a2a2a;
       --dark-primary: #4ade80;
@@ -199,7 +199,7 @@
     .beta-mode, .alpha-mode, .hololens-mode { & .header, & .control-bar, & #status, & #logContainer { display: none; } & .container { padding: 0; max-width: 100%; gap: 0; } }
     .beta-mode { & #stepBox { font-size: 2rem; } & .step-card { position: fixed; top: 45%; left: 50%; transform: translate(-50%, -50%); width: 85%; max-width: 750px; } & #progressContainer { position: fixed; left: 50%; transform: translateX(-50%); bottom: 25%; width: 80%; max-width: 700px; } & #micToggleBtn { display: inline-flex !important; } & #alphaNavButtons, & #holoNavButtons, & #exitAlphaBtn, & #exitHoloBtn { display: none !important; } & #exitBetaBtn { display: block !important; } }
     .alpha-mode { & #stepBox { font-size: 2rem; } & .step-card { position: fixed; top: 40%; left: 50%; transform: translate(-50%, -50%); width: 85%; max-width: 700px; } & #progressContainer { position: fixed; left: 50%; transform: translateX(-50%); top: 65%; width: 80%; max-width: 700px; } & #alphaNavButtons { display: flex !important; position: fixed; left: 50%; transform: translateX(-50%); bottom: 15%; width: 80%; max-width: 600px; } & #holoNavButtons, & #micToggleBtn, & #exitBetaBtn, & #exitHoloBtn { display: none !important; } & #exitAlphaBtn { display: block !important; } }
-    .hololens-mode { & .step-card { position: fixed; top: 40%; left: 50%; transform: translate(-50%, -50%); width: 90%; max-width: 800px; padding: var(--spacing-xl); border: 2px solid var(--dark-primary); } .light-theme.hololens-mode .step-card { border-color: var(--light-primary); } & #stepBox { font-size: 2.5rem; line-height: 1.4; font-weight: 600; } & #progressContainer { position: fixed; left: 50%; transform: translateX(-50%); top: calc(40% + 150px); width: 80%; max-width: 750px; } & #holoNavButtons { display: flex !important; position: fixed; left: 0; right: 0; bottom: 15%; width: 100%; padding: 0 var(--spacing-lg); gap: var(--spacing-lg); } & #exitHoloBtn { display: flex !important; align-items: center; justify-content: center; position: fixed; top: 30px; right: 30px; width: 70px; height: 70px; border-radius: 50%; font-size: 1.3rem; font-weight: 600; background-color: rgba(30, 30, 30, 0.6); backdrop-filter: blur(8px); border: 2px solid var(--dark-text-secondary); color: var(--dark-text); z-index: 1001; cursor: pointer; transition: all var(--transition-normal); } .light-theme.hololens-mode #exitHoloBtn { background-color: rgba(255, 255, 255, 0.5); border-color: var(--light-text-secondary); color: var(--light-text); } & #exitHoloBtn:hover { background-color: rgba(50, 50, 50, 0.8); border-color: var(--dark-text); transform: scale(1.1); } .light-theme.hololens-mode #exitHoloBtn:hover { background-color: rgba(240, 240, 240, 0.7); border-color: var(--light-text); } & #alphaNavButtons, & #micToggleBtn, & #exitBetaBtn, & #exitAlphaBtn { display: none !important; } .gaze-indicator, .gaze-progress { position: absolute; width: 40px; height: 40px; border-radius: 50%; pointer-events: none; transform: translate(-50%, -50%); z-index: 1000; display: none; transition: all 0.1s ease; } .gaze-indicator { border: 3px solid var(--dark-primary); } .gaze-progress { border: 3px solid transparent; border-top-color: var(--dark-primary); animation: spin 1.5s linear infinite; z-index: 1001; } .light-theme .gaze-indicator { border-color: var(--light-primary); } .light-theme .gaze-progress { border-color: transparent; border-top-color: var(--light-primary); } @keyframes spin { 0% { transform: translate(-50%, -50%) rotate(0deg); } 100% { transform: translate(-50%, -50%) rotate(360deg); } } }
+    .hololens-mode { & .step-card { position: fixed; top: 40%; left: 50%; transform: translate(-50%, -50%); width: 90%; max-width: 800px; padding: var(--spacing-xl); border: 2px solid var(--dark-primary); } .light-theme.hololens-mode .step-card { border-color: var(--light-primary); } & #stepBox { font-size: 2.5rem; line-height: 1.4; font-weight: 600; } & #progressContainer { position: fixed; left: 50%; transform: translateX(-50%); top: calc(40% + 110px); width: 80%; max-width: 750px; } & #holoNavButtons { display: flex !important; position: fixed; left: 0; right: 0; bottom: 15%; width: 100%; padding: 0 var(--spacing-lg); gap: var(--spacing-lg); } & #exitHoloBtn { display: flex !important; align-items: center; justify-content: center; position: fixed; top: 30px; right: 30px; padding: 10px 18px; width: auto; height: auto; border-radius: var(--border-radius-lg); font-size: 1.3rem; font-weight: 600; white-space: nowrap; background-color: rgba(30, 30, 30, 0.6); backdrop-filter: blur(8px); border: 2px solid var(--dark-text-secondary); color: var(--dark-text); z-index: 1001; cursor: pointer; transition: all var(--transition-normal); box-shadow: 0 2px 10px var(--dark-shadow);} .light-theme.hololens-mode #exitHoloBtn { background-color: rgba(255, 255, 255, 0.5); border-color: var(--light-text-secondary); color: var(--light-text); } & #exitHoloBtn:hover { background-color: rgba(50, 50, 50, 0.8); border-color: var(--dark-text); transform: scale(1.1); } .light-theme.hololens-mode #exitHoloBtn:hover { background-color: rgba(240, 240, 240, 0.7); border-color: var(--light-text); } & #alphaNavButtons, & #micToggleBtn, & #exitBetaBtn, & #exitAlphaBtn { display: none !important; } .gaze-indicator, .gaze-progress { position: absolute; width: 40px; height: 40px; border-radius: 50%; pointer-events: none; transform: translate(-50%, -50%); z-index: 1000; display: none; transition: all 0.1s ease; } .gaze-indicator { border: 3px solid var(--dark-primary); } .gaze-progress { border: 3px solid transparent; border-top-color: var(--dark-primary); animation: spin 1.5s linear infinite; z-index: 1001; } .light-theme .gaze-indicator { border-color: var(--light-primary); } .light-theme .gaze-progress { border-color: transparent; border-top-color: var(--light-primary); } @keyframes spin { 0% { transform: translate(-50%, -50%) rotate(0deg); } 100% { transform: translate(-50%, -50%) rotate(360deg); } } }
 
     /* ---------- Exit Mode Buttons (Shared Styling) ---------- */
     .exit-btn { position: fixed; top: 20px; right: 20px; padding: var(--spacing-sm) var(--spacing-md); font-size: 0.85rem; font-weight: 600; background-color: var(--dark-surface); color: var(--dark-text-secondary); border: 1px solid var(--dark-border); border-radius: var(--border-radius-md); display: none; cursor: pointer; z-index: 1001; box-shadow: 0 2px 10px var(--dark-shadow); transition: all var(--transition-normal); opacity: 0.8; }
@@ -212,7 +212,7 @@
 <body>
   <button id="exitBetaBtn" class="exit-btn">Exit Voice Mode</button>
   <button id="exitAlphaBtn" class="exit-btn">Exit Touch Mode</button>
-  <button id="exitHoloBtn" class="exit-btn">Exit HoloLens</button>
+  <button id="exitHoloBtn" class="exit-btn">Exit Quest Mode</button>
 
   <button id="micToggleBtn" class="btn">
       <span class="btn-icon">🎤</span>
@@ -231,7 +231,7 @@
         <span class="btn-icon">⛶</span> <span class="btn-text">Enter Fullscreen</span>
       </button>
       <button id="themeToggleBtn" class="btn">
-        <span class="btn-icon"></span> <span class="btn-text"></span> </button>
+        <span class="btn-icon">☀</span> <span class="btn-text">Light Mode</span> </button>
       <button id="betaModeBtn" class="btn btn-primary">
         <span class="btn-icon">🎤</span> Voice Mode
       </button>
@@ -239,7 +239,7 @@
         <span class="btn-icon">👆</span> Touch Mode
       </button>
        <button id="holoModeBtn" class="btn btn-primary">
-        <span class="btn-icon">👓</span> HoloLens Mode
+        <span class="btn-icon">👓</span> Quest Mode
       </button>
     </div>
 
@@ -545,7 +545,7 @@
 
         speechSupported = true;
         recognition = new SpeechRecognition();
-        recognition.continuous = false;
+        recognition.continuous = true;
         recognition.interimResults = false;
         recognition.lang = "en-US";
 
@@ -572,8 +572,8 @@
             else if (event.error === 'not-allowed') { errorMsg = "🎤 Mic access denied. Enable in browser."; speechSupported = false; }
             else { errorMsg = `🎤 Error: ${event.error}.`; }
 
-            if (statusDisplay) statusDisplay.innerText = `⚠️ ${errorMsg.substring(2)}`;
-            updateTranscriptWithMessage(`⚠️ ${errorMsg}`, true);
+            if (statusDisplay) statusDisplay.innerText = `⚠ ${errorMsg.substring(2)}`;
+            updateTranscriptWithMessage(`⚠ ${errorMsg}`, true);
             logCommand(`ERROR: ${errorMsg}`);
 
             if (shouldStopListening) { isListening = false; }
@@ -581,6 +581,52 @@
         };
 
         recognition.onend = () => {
+          /*if (body.classList.contains('beta-mode')) {
+            logCommand("Speech: recognition ended, preparing to restart...");
+
+            // Optional visual blink to indicate restart
+            liveTranscript.classList.add("blinking");
+            setTimeout(() => liveTranscript.classList.remove("blinking"), 500);
+
+            // Give Chrome time to release the audio stream
+            setTimeout(() => {
+              try {
+                recognition.abort(); // clear lingering session
+
+                // Restart after short delay for safety
+                setTimeout(() => {
+                  recognition.start();
+                  isListening = true;
+                  updateMicStatusUI();
+
+                  // Show message on transcript bar
+                  updateTranscriptWithMessage("🎤 Listening restarted...");
+                  liveTranscript.classList.add("mic-active");
+
+                  // Fade back to normal listening prompt
+                  setTimeout(() => {
+                    if (body.classList.contains('beta-mode') && isListening) {
+                      liveTranscript.innerText = "🎤 Listening...";
+                    }
+                  }, 2000);
+
+                  logCommand("Speech: listening restarted successfully.");
+                }, 300);
+
+              } catch (err) {
+                logCommand("Speech restart failed: " + err.message);
+                isListening = false;
+                updateMicStatusUI();
+              }
+            }, 700);
+
+          } else {
+            // If not in voice mode, stop everything
+            isListening = false;
+            updateMicStatusUI();
+            logCommand("Speech: listening ended (not in beta mode).");
+          }
+        };*/
             if (body.classList.contains('beta-mode') && isListening) {
                  setTimeout(() => { if (body.classList.contains('beta-mode') && isListening) { startListening(); } }, 100);
             } else {
@@ -626,18 +672,74 @@
     }
 
     // ----- Fullscreen Toggle -----
-    function toggleFullscreen() { /* ... (Code as before) ... */ }
-    function openFullscreen() { /* ... (Code as before) ... */ }
-    function closeFullscreen() { /* ... (Code as before) ... */ }
+    function toggleFullscreen() { /* ... (Code as before) ... */
+      if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
+        openFullscreen();
+      } else {
+        closeFullscreen();
+      }
+     }
+
+    function openFullscreen() { /* ... (Code as before) ... */ 
+      const elem = document.documentElement; // whole page
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { // Safari
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { // IE/Edge
+        elem.msRequestFullscreen();
+      }
+    }
+
+    function closeFullscreen() { /* ... (Code as before) ... */ 
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) { // Safari
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) { // IE/Edge
+        document.msExitFullscreen();
+      }
+    }
+
     if (fullscreenBtn) fullscreenBtn.addEventListener("click", toggleFullscreen);
     document.addEventListener('fullscreenchange', handleFullscreenChange);
     document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
     document.addEventListener('msfullscreenchange', handleFullscreenChange);
-    function handleFullscreenChange() { /* ... (Code as before) ... */ }
+
+    function handleFullscreenChange() { /* ... (Code as before) ... */
+      const icon = fullscreenBtn.querySelector(".btn-icon");
+      const text = fullscreenBtn.querySelector(".btn-text");
+
+      if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
+        if (icon) icon.textContent = "🡼"; // exit icon (you can pick another symbol)
+        if (text) text.textContent = "Exit Fullscreen";
+      } else {
+        if (icon) icon.textContent = "⛶"; // enter icon
+        if (text) text.textContent = "Enter Fullscreen";
+      }
+     }
 
     // ----- Theme Toggle -----
-    function toggleTheme() { /* ... (Code as before) ... */ }
-    function updateThemeButton(isCurrentlyDark) { /* ... (Code as before) ... */ }
+    function toggleTheme() { 
+      /* ... (Code as before) ... */ 
+      isDarkTheme = !isDarkTheme; // flip state
+      body.classList.toggle("light-theme", !isDarkTheme);
+      updateThemeButton(isDarkTheme);
+    }
+    
+    function updateThemeButton(isCurrentlyDark) { /* ... (Code as before) ... */
+      const icon = themeToggleBtn.querySelector(".btn-icon");
+      const text = themeToggleBtn.querySelector(".btn-text");
+      if (isCurrentlyDark) {
+        // currently dark → offer light mode
+        if (icon) icon.textContent = "☀";
+        if (text) text.textContent = "Light Mode";
+      } else {
+        // currently light → offer dark mode
+        if (icon) icon.textContent = "🌙";
+        if (text) text.textContent = "Dark Mode";
+      }      
+     }
     if (themeToggleBtn) themeToggleBtn.addEventListener("click", toggleTheme);
 
     // ----- Mode Switching -----
@@ -664,7 +766,7 @@
             case "beta":
                 body.classList.add("beta-mode"); logCommand("Mode: Entered Voice Mode (Beta)"); if (!recognition) { recognition = setupSpeechRecognition(); } if (speechSupported) { startListening(); } else { logCommand("Voice Mode active, but speech not supported."); } if (currentStep < 0) restartTutorial(); break;
             case "holo":
-                body.classList.add("hololens-mode"); logCommand("Mode: Entered HoloLens Mode"); if (currentStep < 0) restartTutorial(); break;
+                body.classList.add("hololens-mode"); logCommand("Mode: Entered Quest Mode"); if (currentStep < 0) restartTutorial(); break;
             case "none": default: logCommand("Mode: Returned to Standard View"); updateProgressBar(); break;
         }
         updateMicStatusUI(); // Update global UI state after mode change
@@ -678,6 +780,13 @@
     if (exitBetaBtn) exitBetaBtn.addEventListener("click", () => setMode("none"));
     if (exitHoloBtn) exitHoloBtn.addEventListener("click", () => setMode("none"));
 
+    // ----- Detect Meta Quest Browser -----
+    function isMetaQuestBrowser() {
+      const ua = navigator.userAgent || navigator.vendor || window.opera;
+      // Known Quest Browser identifiers
+      return /OculusBrowser|Quest|Meta Quest/i.test(ua);
+    }
+
     // ----- Initialization -----
     function initializeTutorial() {
         const prefersDark = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)').matches : true;
@@ -686,6 +795,18 @@
         updateThemeButton(isDarkTheme);
 
         updateProgressBar();
+
+        if (isMetaQuestBrowser()) {
+          logCommand("Detected Meta Quest Browser — Disabling Voice Mode (speech not supported).");
+          if (betaModeBtn) {
+              betaModeBtn.disabled = true;
+              betaModeBtn.title = "Voice commands not supported on Meta Quest Browser";
+              betaModeBtn.style.opacity = "0.5";
+              betaModeBtn.style.cursor = "not-allowed";
+          }
+          // Optional: also hide it completely instead of disabling
+          betaModeBtn.style.display = "none";
+        }
 
         // Setup recognition early to check support
         if (!recognition) { recognition = setupSpeechRecognition(); }
@@ -710,5 +831,6 @@
   }
 
   </script>
+  <div style="height: 100px;"></div>
 </body>
 </html>
